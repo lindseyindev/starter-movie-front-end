@@ -4,7 +4,7 @@
 * [Questions](#questions)
 
 ## Description
-This is the user interface which connects to the We Love Movies API so data can be fetched and displayed dynamically. This project is built with React and Bootstrap, the primary responsibilities I had on this project was to ensure that API provided the correct data depending on which route was called and to ensure successful deployment.
+This is the user interface which connects to the [We Love Movies API](https://github.com/lindseyindev/welovemoviesproject) so data can be fetched and displayed dynamically. This project is built with React and Bootstrap, the primary responsibilities I had on this project was to ensure that API provided the correct data depending on which route was called and to ensure successful deployment.
 
 ![deployed](https://gyazo.com/82c7b282db896697b17e37e4c9735f0a.png)
 
