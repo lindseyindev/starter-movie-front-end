@@ -21,7 +21,7 @@ function Theater({ theater }) {
                 <Link to={`/movies/${movie.movie_id}`}>
                   <img
                     alt={`${movie.title} Poster`}
-                    src={movie.image_url}
+                    src={`${movie.image_url}`}
                     className="w-100"
                   />
                 </Link>
