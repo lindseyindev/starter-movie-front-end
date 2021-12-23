@@ -10,15 +10,16 @@ function FullMovie() {
   const { movieId } = useParams();
   const [movie, setMovie] = useState({});
   const [error, setError] = useState(null);
+  
 
   useEffect(() => {
-    loadMovie(movieId);
+    loadMovie(movieId)
   }, [movieId]);
 
   function loadMovie(movieId) {
     setError(null);
     const abortController = new AbortController();
-    readMovie(movieId, abortController.signal).then(setMovie).catch(setError);
+    readMovie(movieId, abortController.signal).then(setMovie).catch(setError)
     return () => abortController.abort();
   }
 
@@ -30,12 +31,11 @@ function FullMovie() {
     { movie_id: movieId, review_id: reviewId },
     score
   ) {
-    console.log("score", reviewId, score);
-    updateReview(reviewId, { score }).then(() => loadMovie(movieId));
+    updateReview(reviewId, { score }).then(() => loadMovie(movieId))
   }
 
   return (
-    <div className="container">
+<div className="container">
       <ErrorAlert error={error} />
       <section className="row mt-4">
         <article className="col-sm-12 col-md-6 col-lg-3">
@@ -57,7 +57,7 @@ function FullMovie() {
         </aside>
       </section>
     </div>
-  );
+ )
 }
 
 export default FullMovie;
